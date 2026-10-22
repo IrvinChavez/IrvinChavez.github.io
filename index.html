@@ -130,7 +130,7 @@ async function load(){
   $('s1').textContent=u.public_repos;$('s3').textContent=u.followers;
   $('s2').textContent=r.reduce((a,x)=>a+x.stargazers_count,0);
   $('s4').textContent=Math.max(1,new Date().getFullYear()-new Date(u.created_at).getFullYear());
-  const own=r.filter(x=>!x.fork&&x.name!==USER);
+  const own=r.filter(x=>!x.fork&&x.name!==USER&&!/\.github\.io$/i.test(x.name));
   const cnt={};own.forEach(x=>{if(x.language)cnt[x.language]=(cnt[x.language]||0)+1});
   const ents=Object.entries(cnt).sort((a,b)=>b[1]-a[1]);const tot=ents.reduce((a,b)=>a+b[1],0)||1;
   $('chips').innerHTML=ents.map(([l])=>`<span class="chip" style="--c:${COLORS[l]||COLORS.Other}">${l}</span>`).join('');
