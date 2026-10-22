@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Irvin · Hub de GitHub</title>
+<style>
+:root{--bg:#07090d;--card:#0d1117;--line:#1b2230;--txt:#e6edf3;--mut:#8b949e;--g:#39d353}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:24px}
+.wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:280px 1fr;gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+aside img{width:100%;aspect-ratio:1;border-radius:50%;object-fit:cover;display:block;border:2px solid var(--line)}
+aside{align-self:start}
+aside h1{font-size:20px;margin:16px 0 0}
+aside .h{color:var(--mut);margin:2px 0 14px}
+.btn{display:flex;gap:8px;justify-content:center;align-items:center;background:#161b22;border:1px solid var(--line);color:var(--txt);text-decoration:none;border-radius:6px;padding:8px;font-weight:600;font-size:13px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.tags span{border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:11px;color:#c9d1d9}
+.meta{color:var(--mut);display:grid;gap:8px;font-size:13px}
+.meta a{color:var(--mut)}
+.meta b{color:var(--txt)}
+main{display:grid;gap:16px;align-content:start}
+.hero{display:flex;justify-content:space-between;align-items:center}
+.hero h2{margin:0;font-size:18px}.hero p{margin:4px 0 0;color:var(--mut);font-size:12px}
+.hero small{color:var(--mut);font-size:10px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{text-align:center}
+.stat .i{color:var(--mut);font-size:16px}
+.stat .n{font-size:30px;font-weight:700;margin:4px 0}
+.stat .l{color:var(--mut);font-size:10px;letter-spacing:.08em}
+.ch{display:flex;justify-content:space-between;color:var(--mut);margin-bottom:10px}
+.ch b{color:var(--txt)}
+#heat{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,1fr);gap:3px;overflow:hidden}
+#heat i{aspect-ratio:1;border-radius:2px;background:#161b22;min-width:8px}
+#heat i.l1{background:#0e4429}#heat i.l2{background:#006d32}#heat i.l3{background:#26a641}#heat i.l4{background:#39d353}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.lab{font-size:10px;letter-spacing:.1em;color:var(--mut);margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--c);color:var(--c);border-radius:999px;padding:3px 12px;font-size:12px;background:color-mix(in srgb,var(--c) 12%,transparent)}
+.donut{display:flex;align-items:center;gap:16px}
+.donut svg{width:110px;height:110px;flex:none}
+.leg{display:grid;gap:4px;font-size:12px;width:100%}
+.leg div{display:flex;align-items:center;gap:8px}.leg em{margin-left:auto;font-style:normal;color:var(--mut)}
+.leg s{width:10px;height:10px;border-radius:50%;display:inline-block}
+.ph{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-weight:600}
+.ph span{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:6px;padding:3px 8px;font-weight:400}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.proj{border:1px solid var(--line);border-radius:8px;padding:14px;text-decoration:none;color:inherit;display:block;background:#0a0e14}
+.proj:hover{border-color:#2ea043}
+.proj .t{color:var(--g);font-weight:600;display:flex;justify-content:space-between}
+.proj .t u{text-decoration:none;font-size:11px;color:var(--mut);font-weight:400}
+.proj p{color:var(--mut);font-size:12px;margin:8px 0}
+.proj .s{color:var(--mut);font-size:11px}
+@media(max-width:820px){.wrap{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.row2,.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<aside class="card">
+  <img id="av" alt="Irvin" src="https://avatars.githubusercontent.com/u/254929205?v=4">
+  <h1 id="nm">Irvin</h1>
+  <div class="h">@IrvinChavez</div>
+  <a class="btn" href="https://github.com/IrvinChavez">⌥ Seguir en GitHub</a>
+  <div class="tags"><span>Desarrollador</span><span>UTCH</span><span>Multiplataforma</span></div>
+  <div class="meta">
+    <div>🔗 <a href="https://pagemy.netlify.app/">pagemy.netlify.app</a></div>
+    <div>📅 En GitHub desde enero de 2026</div>
+    <div>👥 <b id="fo">4</b> seguidores · <b id="fg">5</b> siguiendo</div>
+  </div>
+</aside>
+
+<main>
+  <div class="card hero">
+    <div><h2>Bienvenido al Hub de Irvin</h2><p>Explora mis proyectos y contribuciones de código abierto.</p></div>
+    <small>Datos de GitHub</small>
+  </div>
+
+  <div class="stats">
+    <div class="card stat"><div class="i">▭</div><div class="n" id="s1">–</div><div class="l">REPOS TOTALES</div></div>
+    <div class="card stat"><div class="i">☆</div><div class="n" id="s2">0</div><div class="l">ESTRELLAS</div></div>
+    <div class="card stat"><div class="i">👥</div><div class="n" id="s3">4</div><div class="l">SEGUIDORES</div></div>
+    <div class="card stat"><div class="i">◔</div><div class="n" id="s4">1</div><div class="l">AÑO ACTIVO</div></div>
+  </div>
+
+  <div class="card">
+    <div class="ch"><span>Contribuciones</span><span>Total de contribuciones: <b id="tc">–</b></span></div>
+    <div id="heat"></div>
+  </div>
+
+  <div class="row2">
+    <div class="card"><div class="lab">TECNOLOGÍAS PRINCIPALES</div><div class="chips" id="chips"></div></div>
+    <div class="card donut"><svg id="dn" viewBox="0 0 42 42"></svg><div class="leg" id="leg"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="ph"><span style="border:0;padding:0;font-size:14px;color:var(--txt)">▫ Proyectos destacados</span><span>Más estrellas</span></div>
+    <div class="grid" id="projs"></div>
+  </div>
+</main>
+</div>
+
+<script>
+const USER='IrvinChavez';
+const COLORS={TypeScript:'#3178c6',JavaScript:'#f1e05a',Python:'#3572a5',CSS:'#8b5cf6',HTML:'#e34c26',Java:'#b07219',Other:'#8b949e'};
+const SNAP="000000000000000000000000100000000000000100000000022000000000000000000000000001000000102000020000000000400000000000000000000000000000000000000000000000000000000000000000000100000000000000000010001000000000000020010000000000000000000000040000001001000000000000000030100000000000000100000000000000030000100000000000000130000000000000000000000000010000001030000000000010000";
+const $=id=>document.getElementById(id);
+
+function heat(levels){
+  const h=$('heat');h.innerHTML='';
+  levels.forEach(l=>{const i=document.createElement('i');if(l)i.className='l'+l;h.appendChild(i)});
+  h.style.gridTemplateColumns='repeat('+Math.ceil(levels.length/7)+',1fr)';
+}
+heat([...SNAP].map(Number));
+$('tc').textContent='74';
+
+fetch('https://github-contributions-api.jogruber.de/v4/'+USER+'?y=last').then(r=>r.json()).then(d=>{
+  if(!d.contributions)return;
+  heat(d.contributions.map(c=>c.level));
+  $('tc').textContent=Object.values(d.total).reduce((a,b)=>a+b,0);
+}).catch(()=>{});
+
+async function load(){
+  const [u,r]=await Promise.all([
+    fetch('https://api.github.com/users/'+USER).then(r=>r.json()),
+    fetch('https://api.github.com/users/'+USER+'/repos?per_page=100&sort=pushed').then(r=>r.json())
+  ]);
+  $('av').src=u.avatar_url;$('nm').textContent=u.name||USER;
+  $('fo').textContent=u.followers;$('fg').textContent=u.following;
+  $('s1').textContent=u.public_repos;$('s3').textContent=u.followers;
+  $('s2').textContent=r.reduce((a,x)=>a+x.stargazers_count,0);
+  $('s4').textContent=Math.max(1,new Date().getFullYear()-new Date(u.created_at).getFullYear());
+  const own=r.filter(x=>!x.fork&&x.name!==USER);
+  const cnt={};own.forEach(x=>{if(x.language)cnt[x.language]=(cnt[x.language]||0)+1});
+  const ents=Object.entries(cnt).sort((a,b)=>b[1]-a[1]);const tot=ents.reduce((a,b)=>a+b[1],0)||1;
+  $('chips').innerHTML=ents.map(([l])=>`<span class="chip" style="--c:${COLORS[l]||COLORS.Other}">${l}</span>`).join('');
+  let off=0;const R=15.915;
+  $('dn').innerHTML='<circle cx="21" cy="21" r="'+R+'" fill="none" stroke="#161b22" stroke-width="6"/>'+
+   ents.map(([l,n])=>{const p=n/tot*100;const s=`<circle cx="21" cy="21" r="${R}" fill="none" stroke="${COLORS[l]||COLORS.Other}" stroke-width="6" stroke-dasharray="${p} ${100-p}" stroke-dashoffset="${25-off}"/>`;off+=p;return s}).join('')+
+   `<text x="21" y="22.5" text-anchor="middle" fill="#8b949e" font-size="4.5">${ents.length} lang</text>`;
+  $('leg').innerHTML=ents.map(([l,n])=>`<div><s style="background:${COLORS[l]||COLORS.Other}"></s>${l}<em>${Math.round(n/tot*100)}%</em></div>`).join('');
+  const list=own.sort((a,b)=>b.stargazers_count-a.stargazers_count||new Date(b.pushed_at)-new Date(a.pushed_at)).slice(0,6);
+  $('projs').innerHTML=list.map(x=>`<a class="proj" href="${x.homepage||x.html_url}" target="_blank" rel="noopener"><div class="t">${x.name}<u>${x.language||''}</u></div><p>${x.description||'Proyecto en GitHub'}</p><div class="s">★ ${x.stargazers_count} &nbsp; ⑂ ${x.forks_count}</div></a>`).join('');
+}
+load().catch(()=>{});
+</script>
+</body>
+</html>
